@@ -27,7 +27,7 @@ namespace WcfAsync
                 ? "null httpcontext"
                 : System.Web.HttpContext.Current.Items["threadid"] == null
                     ? $"new httpcontext, threadid =  {Thread.CurrentThread.ManagedThreadId}"
-                    : $"original httpcontext, thredaid = {System.Web.HttpContext.Current.Items["threadid"]}";
+                    : $"original httpcontext, threadid = {System.Web.HttpContext.Current.Items["threadid"]}";
         }
     }
 }
